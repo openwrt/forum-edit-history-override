@@ -1,0 +1,11 @@
+plugins:
+  edit_history_override_enabled:
+    default: false
+    client: false
+  # Default Moderators and TL4
+  edit_history_override_permitGroups:
+    type: group_list
+    list_type: compact
+    default: "2|14"
+    allow_any: false
+    refresh: true

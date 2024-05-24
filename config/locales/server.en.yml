@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    edit_history_override_enabled: "Allow selected groups to view edit history"
+    edit_history_override_permitGroups: "Allow members of these groups to view edit history. Staff and post owners can always view post edit history"
