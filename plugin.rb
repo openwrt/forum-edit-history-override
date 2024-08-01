@@ -2,7 +2,7 @@
 
 # name: edit-history-override
 # about: A super simple plugin to change post edit history privs
-# version: 0.0.1
+# version: 0.0.2
 # authors: thess
 # url: https://github.com/thess/edit-history-override
 
@@ -25,7 +25,7 @@ module ::PostGuardian
     # Logged-in and (staff | override group member | post_owner) and visible
     authenticated? && (is_staff? || 
       (SiteSetting.edit_history_override_enabled && 
-        @user.in_any_groups?(SiteSetting.edit_history_override_permitGroups)) ||
+        @user.in_any_groups?(SiteSetting.edit_history_override_permitGroups_map)) ||
       @user.id == post.user_id) &&
     can_see_post?(post)
   end
