@@ -2,9 +2,9 @@
 
 # name: edit-history-override
 # about: A super simple plugin to change post edit history privs
-# version: 0.0.2
+# version: 0.0.3
 # authors: thess
-# url: https://github.com/thess/edit-history-override
+# url: https://github.com/openwrt/forum-edit-history-override
 
 enabled_site_setting :edit_history_override_enabled
 
